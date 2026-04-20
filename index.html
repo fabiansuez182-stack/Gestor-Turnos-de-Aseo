@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestor de Aseo | ADSO 3292136</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <h1>ADSO Cognitus #3292136</h1>
+        <p id="current-date-display"></p>
+    </header>
+
+    <main class="container">
+        <section class="day-selector">
+            <button class="day-btn" data-day="1">L</button>
+            <button class="day-btn" data-day="2">M</button>
+            <button class="day-btn" data-day="3">M</button>
+            <button class="day-btn" data-day="4">J</button>
+            <button class="day-btn" data-day="5">V</button>
+        </section>
+
+        <section class="turn-display">
+            <header class="section-title">
+                <h2 id="day-name">Turno de Hoy</h2>
+                <span class="status-badge" id="status-badge">Activo</span>
+            </header>
+            
+            <div id="apprentice-grid" class="grid-container">
+                </div>
+        </section>
+    </main>
+
+    <script type="module" src="app/app.js"></script>
 </body>
 </html>
